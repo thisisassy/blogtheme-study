@@ -1,0 +1,11 @@
+@charset 'utf-8';
+/*!
+ Theme: Minim
+ Author: asssy
+ Description: ミニマルなあなたのためのテーマです
+ Responsive: yes
+ */
+body {
+  font-family: 'Helvetica Neue', 'Yu Gothic', sans-serif;
+  word-break: break-all;
+}
