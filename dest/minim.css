@@ -7,5 +7,106 @@
  */
 body {
   font-family: 'Helvetica Neue', 'Yu Gothic', sans-serif;
-  word-break: break-all;
+}
+a {
+  text-decoration: none;
+}
+#blog-title #blog-title-content #title {
+  margin: 0 0 8px;
+}
+#blog-title #blog-title-content #title a {
+  font-size: 16px;
+  color: #DC143C;
+}
+#blog-title #blog-title-content #blog-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+#container,
+#footer {
+  background: #fff;
+  margin: 16px auto;
+}
+@media screen and (min-width: 960px) {
+  #container,
+  #footer {
+    margin: 72px auto;
+  }
+}
+#container-inner {
+  width: auto;
+  margin: auto 1rem;
+}
+@media screen and (min-width: 960px) {
+  #container-inner {
+    max-width: 630px;
+    margin: auto;
+  }
+}
+.content-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  .content-inner {
+    flex-direction: row;
+  }
+}
+#main {
+  width: auto;
+  padding: 8px 16px;
+  background: lightblue;
+}
+@media screen and (min-width: 960px) {
+  #main {
+    padding: 16px 24px;
+    margin: 72px 0;
+    background: lightcoral;
+  }
+}
+#box2 {
+  width: auto;
+  margin: 0 1rem;
+  background: lightblue;
+}
+@media screen and (min-width: 960px) {
+  #box2 {
+    padding: 24px 16px;
+    background: lightcoral;
+  }
+}
+.entry .entry-header .entry-date {
+  margin: 0 0 8px;
+}
+.entry .entry-header .entry-date a {
+  color: #888;
+}
+.entry .entry-header .entry-title {
+  margin: 0 0 16px;
+}
+.entry .entry-header .entry-title a {
+  color: #333;
+}
+.entry .entry-header .entry-categories .entry-category-link {
+  background: #CCD1D1;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.entry .entry-content .table-of-contetns {
+  background: #d9d9d9;
+}
+.entry .entry-content p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+.entry .entry-content h1,
+.entry .entry-content h2,
+.entry .entry-content h3,
+.entry .entry-content h4,
+.entry .entry-content h5,
+.entry .entry-content h6 {
+  margin: 33px 0;
 }
