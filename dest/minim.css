@@ -93,8 +93,17 @@ a {
     flex-flow: row wrap;
   }
 }
+#footer-inner {
+  max-width: 800px;
+  margin: auto;
+}
+#footer-inner .footer-address a,
+#footer-inner .services a {
+  color: #333;
+}
 .hatena-module {
-  width: 50%;
+  width: auto;
+  margin: 0 0 40px;
 }
 @media screen and (min-width: 960px) {
   .hatena-module {
@@ -151,8 +160,8 @@ a {
   margin: 0 0 8px;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a {
-  background: #D5D8DC;
-  border: 1px solid #D5D8DC;
+  background: #F2F3F4;
+  border: 1px solid #F2F3F4;
   border-radius: 4px;
   color: #333;
   padding: 0.45em;
@@ -160,9 +169,12 @@ a {
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:hover,
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:focus {
-  border: 1px solid #D5D8DC;
+  border: 1px solid #F2F3F4;
   background: #fff;
   transition: 0.3s;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-categories .urllist-category-link {
+  margin: 0 0 4px;
 }
 .hatena-module-profile .hatena-module-body {
   display: flex;
@@ -177,8 +189,8 @@ a {
   margin: 0 0 8px;
 }
 .hatena-module-category .hatena-urllist a {
-  background: #D5D8DC;
-  border: 1px solid #D5D8DC;
+  background: #F2F3F4;
+  border: 1px solid #F2F3F4;
   border-radius: 4px;
   color: #333;
   padding: 0.45em;
@@ -186,10 +198,14 @@ a {
 }
 .hatena-module-category .hatena-urllist a:hover,
 .hatena-module-category .hatena-urllist a:focus {
-  border: 1px solid #D5D8DC;
+  border: 1px solid #F2F3F4;
   background: #fff;
   color: #333;
   transition: 0.3s;
+}
+.search-form {
+  width: 100%;
+  display: flex;
 }
 .entry .entry-header {
   position: relative;
@@ -214,19 +230,22 @@ a {
 }
 .entry .entry-header .entry-header-menu a {
   color: #333;
-  border: 1px solid #D5D8DC;
+  border: 1px solid #F2F3F4;
   border-radius: 4px;
   padding: 0.45em;
 }
 .entry .entry-header .entry-header-menu a:hover,
 .entry .entry-header .entry-header-menu a:focus {
-  background: #D5D8DC;
-  border: 1px solid #D5D8DC;
+  background: #F2F3F4;
+  border: 1px solid #F2F3F4;
   transition: 0.3s;
 }
+.entry .entry-header .entry-categories {
+  margin: 0 0 16px;
+}
 .entry .entry-header .entry-categories .entry-category-link {
-  background: #D5D8DC;
-  border: 1px solid #D5D8DC;
+  background: #F2F3F4;
+  border: 1px solid #F2F3F4;
   border-radius: 4px;
   color: #333;
   font-size: 14px;
@@ -235,7 +254,7 @@ a {
 .entry .entry-header .entry-categories .entry-category-link:hover,
 .entry .entry-header .entry-categories .entry-category-link:focus {
   background: #fff;
-  border: 1px solid #D5D8DC;
+  border: 1px solid #F2F3F4;
   color: #333;
   transition: 0.3s;
 }
@@ -245,6 +264,22 @@ a {
 .entry .entry-content p {
   font-size: 18px;
   line-height: 1.8;
+}
+.entry .entry-content p a {
+  color: #5DADE2;
+}
+.entry .entry-content p a:hover,
+.entry .entry-content p a:focus {
+  text-decoration: underline;
+}
+.entry .entry-content p code {
+  background: #272822;
+  color: #f8f8f2;
+  border-radius: 4px;
+  padding: 0.24em;
+}
+.entry .entry-content li {
+  line-height: 1.6;
 }
 .entry .entry-content h1,
 .entry .entry-content h2,
@@ -276,12 +311,41 @@ a {
   margin: 16px 0;
 }
 .entry .entry-content table {
-  background: #eeeeee;
   width: 100%;
+}
+.entry .entry-content table th,
+.entry .entry-content table td {
+  padding: 0.45em;
+}
+.entry .entry-content thead tr {
+  background: #85929E;
+}
+.entry .entry-content tbody tr:nth-child(2n+1) {
+  background: #F2F3F4;
+}
+.entry .entry-content blockquote {
+  background: #F2F3F4;
+  margin: 0;
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+.entry .entry-content blockquote p {
+  margin: 0 0 16px;
+  font-style: oblique;
+}
+.entry .entry-content blockquote p a {
+  text-align: center;
+}
+.entry .entry-content pre {
+  background: #272822;
+  color: #f8f8f2;
+  border-radius: 4px;
+  margin: 0 0 16px;
+  padding: 16px 24px;
 }
 .archive-entry {
   margin: 0 0 40px;
-  border: 1px solid #D5D8DC;
+  border: 1px solid #F2F3F4;
   border-radius: 4px;
   padding: 8px 16px;
 }
@@ -308,8 +372,8 @@ a {
   color: #333;
   font-size: 14px;
   padding: 0.45em;
-  background: #D5D8DC;
-  border: 1px solid #D5D8DC;
+  background: #F2F3F4;
+  border: 1px solid #F2F3F4;
   transition: 0.3s;
 }
 .archive-entry .archive-entry-body .entry-description {
