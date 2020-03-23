@@ -9,12 +9,12 @@ a{
         #title{
             margin: 0 0 8px;
             a{
-                font-size: 16px;
+                font-size: 18px;
                 color: @link;
             }
         }
         #blog-description{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
             color: @gray;
         }
@@ -64,7 +64,19 @@ a{
     margin: 0 1rem;
     background: lightblue;
     @media @viewport-960{
+        width: 630px;
         padding: 24px 16px;
-        background: lightcoral;
+        margin: 0 auto;
+        background: #ccc;
+    }
+}
+
+#box2-inner{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    @media @viewport-960{
+        flex-flow: row wrap;
     }
 }

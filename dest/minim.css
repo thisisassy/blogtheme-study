@@ -15,11 +15,11 @@ a {
   margin: 0 0 8px;
 }
 #blog-title #blog-title-content #title a {
-  font-size: 16px;
+  font-size: 18px;
   color: #DC143C;
 }
 #blog-title #blog-title-content #blog-description {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #888;
 }
@@ -73,9 +73,35 @@ a {
 }
 @media screen and (min-width: 960px) {
   #box2 {
+    width: 630px;
     padding: 24px 16px;
-    background: lightcoral;
+    margin: 0 auto;
+    background: #ccc;
   }
+}
+#box2-inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+@media screen and (min-width: 960px) {
+  #box2-inner {
+    flex-flow: row wrap;
+  }
+}
+.hatena-module {
+  width: 50%;
+}
+@media screen and (min-width: 960px) {
+  .hatena-module {
+    width: 44%;
+    padding: 8px;
+    margin: 0 16px 0 0;
+  }
+}
+.hatena-module .hatena-module-title {
+  font-size: 18px;
+  margin: 0 0 8px;
 }
 .entry .entry-header .entry-date {
   margin: 0 0 8px;
@@ -88,6 +114,7 @@ a {
 }
 .entry .entry-header .entry-title a {
   color: #333;
+  font-family: 'YuMincho';
 }
 .entry .entry-header .entry-categories .entry-category-link {
   background: #CCD1D1;
@@ -109,4 +136,29 @@ a {
 .entry .entry-content h5,
 .entry .entry-content h6 {
   margin: 33px 0;
+}
+.entry .entry-content h1 {
+  font-size: 32px;
+}
+.entry .entry-content h2 {
+  font-size: 30px;
+}
+.entry .entry-content h3 {
+  font-size: 28px;
+}
+.entry .entry-content h4 {
+  font-size: 26px;
+}
+.entry .entry-content h5 {
+  font-size: 24px;
+}
+.entry .entry-content h6 {
+  font-size: 22px;
+}
+.entry .entry-content hr {
+  margin: 16px 0;
+}
+.entry .entry-content table {
+  background: #eeeeee;
+  width: 100%;
 }
