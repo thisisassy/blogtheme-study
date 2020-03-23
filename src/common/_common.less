@@ -5,12 +5,13 @@ a{
     text-decoration: none;
 }
 #blog-title{
+    margin: 0 0 80px;
     #blog-title-content{
         #title{
             margin: 0 0 8px;
             a{
                 font-size: 18px;
-                color: @link;
+                color: @heading;
             }
         }
         #blog-description{
@@ -46,28 +47,29 @@ a{
         flex-direction: row;
     }
 }
-
+#top-box{
+    a,span{
+        color: @gray;
+    }
+}
 #main{
     width: auto;
     padding: 8px 16px;
-    background: lightblue;
 
     @media @viewport-960{
+        width: 630px;
         padding: 16px 24px;
         margin: 72px 0;
-        background: lightcoral;
     }
 }
 
 #box2{
     width: auto;
     margin: 0 1rem;
-    background: lightblue;
     @media @viewport-960{
         width: 630px;
-        padding: 24px 16px;
+        padding: 16px 24px;
         margin: 0 auto;
-        background: #ccc;
     }
 }
 

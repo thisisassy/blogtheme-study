@@ -11,17 +11,20 @@ body {
 a {
   text-decoration: none;
 }
+#blog-title {
+  margin: 0 0 80px;
+}
 #blog-title #blog-title-content #title {
   margin: 0 0 8px;
 }
 #blog-title #blog-title-content #title a {
   font-size: 18px;
-  color: #DC143C;
+  color: #333;
 }
 #blog-title #blog-title-content #blog-description {
   font-size: 16px;
   font-weight: 400;
-  color: #888;
+  color: #85929E;
 }
 #container,
 #footer {
@@ -54,29 +57,30 @@ a {
     flex-direction: row;
   }
 }
+#top-box a,
+#top-box span {
+  color: #85929E;
+}
 #main {
   width: auto;
   padding: 8px 16px;
-  background: lightblue;
 }
 @media screen and (min-width: 960px) {
   #main {
+    width: 630px;
     padding: 16px 24px;
     margin: 72px 0;
-    background: lightcoral;
   }
 }
 #box2 {
   width: auto;
   margin: 0 1rem;
-  background: lightblue;
 }
 @media screen and (min-width: 960px) {
   #box2 {
     width: 630px;
-    padding: 24px 16px;
+    padding: 16px 24px;
     margin: 0 auto;
-    background: #ccc;
   }
 }
 #box2-inner {
@@ -101,13 +105,100 @@ a {
 }
 .hatena-module .hatena-module-title {
   font-size: 18px;
+  margin: 0 0 16px;
+}
+.hatena-module .hatena-module-title a {
+  color: #333;
+}
+.hatena-module .hatena-module-body a,
+.hatena-module .hatena-module-body span {
+  color: #333;
+}
+.hatena-module .hatena-module-body a:hover,
+.hatena-module .hatena-module-body span:hover,
+.hatena-module .hatena-module-body a:focus,
+.hatena-module .hatena-module-body span:focus {
+  color: #5DADE2;
+}
+.hatena-module .hatena-module-body .hatena-urllist {
+  padding: 0;
+}
+.hatena-module .hatena-module-body .hatena-urllist li {
+  list-style: none;
+  margin: 0 0 16px;
+}
+.hatena-module .hatena-module-body .urllist-item {
+  margin: 0 0 16px;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-image-link img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-date-link time {
+  color: #85929E;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-title-link {
+  color: #333;
   margin: 0 0 8px;
+  font-size: 16px;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-title-link:hover,
+.hatena-module .hatena-module-body .urllist-item .urllist-title-link:focus {
+  color: #5DADE2;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-categories {
+  margin: 0 0 8px;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-categories a {
+  background: #D5D8DC;
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+  color: #333;
+  padding: 0.45em;
+  display: inline-block;
+}
+.hatena-module .hatena-module-body .urllist-item .urllist-categories a:hover,
+.hatena-module .hatena-module-body .urllist-item .urllist-categories a:focus {
+  border: 1px solid #D5D8DC;
+  background: #fff;
+  transition: 0.3s;
+}
+.hatena-module-profile .hatena-module-body {
+  display: flex;
+  flex-direction: column;
+}
+.hatena-module-profile .hatena-module-body .profile-icon,
+.hatena-module-profile .hatena-module-body .id {
+  margin: 0 0 8px;
+}
+.hatena-module-profile .hatena-module-body .profile-description p {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+.hatena-module-category .hatena-urllist a {
+  background: #D5D8DC;
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+  color: #333;
+  padding: 0.45em;
+  display: inline-block;
+}
+.hatena-module-category .hatena-urllist a:hover,
+.hatena-module-category .hatena-urllist a:focus {
+  border: 1px solid #D5D8DC;
+  background: #fff;
+  color: #333;
+  transition: 0.3s;
+}
+.entry .entry-header {
+  position: relative;
 }
 .entry .entry-header .entry-date {
-  margin: 0 0 8px;
+  margin: 0 0 16px;
 }
 .entry .entry-header .entry-date a {
-  color: #888;
+  color: #85929E;
 }
 .entry .entry-header .entry-title {
   margin: 0 0 16px;
@@ -116,11 +207,37 @@ a {
   color: #333;
   font-family: 'YuMincho';
 }
-.entry .entry-header .entry-categories .entry-category-link {
-  background: #CCD1D1;
+.entry .entry-header .entry-header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.entry .entry-header .entry-header-menu a {
   color: #333;
-  padding: 4px 8px;
+  border: 1px solid #D5D8DC;
   border-radius: 4px;
+  padding: 0.45em;
+}
+.entry .entry-header .entry-header-menu a:hover,
+.entry .entry-header .entry-header-menu a:focus {
+  background: #D5D8DC;
+  border: 1px solid #D5D8DC;
+  transition: 0.3s;
+}
+.entry .entry-header .entry-categories .entry-category-link {
+  background: #D5D8DC;
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  padding: 0.45em;
+}
+.entry .entry-header .entry-categories .entry-category-link:hover,
+.entry .entry-header .entry-categories .entry-category-link:focus {
+  background: #fff;
+  border: 1px solid #D5D8DC;
+  color: #333;
+  transition: 0.3s;
 }
 .entry .entry-content .table-of-contetns {
   background: #d9d9d9;
@@ -161,4 +278,41 @@ a {
 .entry .entry-content table {
   background: #eeeeee;
   width: 100%;
+}
+.archive-entry {
+  margin: 0 0 40px;
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.archive-entry .archive-entry-header .date {
+  margin: 0 0 8px;
+}
+.archive-entry .archive-entry-header .date time {
+  font-size: 16px;
+  color: #85929E;
+}
+.archive-entry .archive-entry-header .entry-title {
+  margin: 0 0 16px;
+}
+.archive-entry .archive-entry-header .entry-title a {
+  color: #333;
+  font-family: 'YuMincho';
+}
+.archive-entry .categories {
+  margin: 0 0 16px;
+}
+.archive-entry .categories a {
+  background: #fff;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  padding: 0.45em;
+  background: #D5D8DC;
+  border: 1px solid #D5D8DC;
+  transition: 0.3s;
+}
+.archive-entry .archive-entry-body .entry-description {
+  color: #85929E;
+  font-size: 14px;
 }

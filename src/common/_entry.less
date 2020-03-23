@@ -1,7 +1,8 @@
 .entry{
     .entry-header{
+        position: relative;
         .entry-date{
-            margin: 0 0 8px;
+            margin: 0 0 16px;
             a{
                 color: @gray;
             }
@@ -13,13 +14,37 @@
                 font-family: 'YuMincho';
             }
         }
+        .entry-header-menu{
+            position: absolute;
+            top: 0;
+            right: 0;
+            a{
+                color: @heading;
+                border: 1px solid @light-gray;
+                border-radius: 4px;
+                padding: 0.45em;
+                &:hover,&:focus{
+                    background: @light-gray;
+                    border: 1px solid @light-gray;
+                    transition: .3s;
+                }
+            }
+        }
 
         .entry-categories{
             .entry-category-link{
                 background: @light-gray;
-                color: @heading;
-                padding: 4px 8px;
+                border: 1px solid @light-gray;
                 border-radius: 4px;
+                color: @heading;
+                font-size: 14px;
+                padding: 0.45em;
+                &:hover,&:focus{
+                    background: #fff;
+                    border: 1px solid @light-gray;
+                    color: @heading;
+                    transition: .3s;
+                }
             }
         }
     }
