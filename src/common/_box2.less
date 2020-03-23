@@ -1,0 +1,113 @@
+
+.hatena-module{
+    width: auto;
+    margin: 0 0 40px;
+    @media @viewport-960{
+        width: 44%;
+        padding: 8px;
+        margin: 0 16px 0 0;
+    }
+
+    .hatena-module-title{
+        font-size: 18px;
+        margin: 0 0 16px;
+        a{
+            color: @heading;
+        }
+    }
+    .hatena-module-body{
+        a,span{
+            color: @heading;
+            &:hover,&:focus{
+                color: @link;
+            }
+        }
+        .hatena-urllist{
+            padding: 0;
+            li{
+                list-style: none;
+                margin: 0 0 16px;
+            }
+        }
+        .urllist-item{
+            margin: 0 0 16px;
+            .urllist-image-link{
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 4px;
+                }
+            }
+            .urllist-date-link{
+                time{
+                    color: @gray;
+                }
+            }
+            .urllist-title-link{
+                color: @heading;
+                margin: 0 0 8px;
+                font-size: 16px;
+                &:hover,&:focus{
+                    color: @link;
+                }
+            }
+            .urllist-categories{
+                margin: 0 0 8px;
+                a{
+                    background: @light-gray;
+                    border: 1px solid @light-gray;
+                    border-radius: 4px;
+                    color: @heading;
+                    padding: 0.45em;
+                    display: inline-block;
+                    &:hover,&:focus{
+                        border: 1px solid @light-gray;
+                        background: #fff;
+                        transition: .3s;
+                    }
+                }
+                .urllist-category-link{
+                    margin: 0 0 4px;
+                }
+            }
+        }
+    }
+}
+.hatena-module-profile{
+    .hatena-module-body{
+        display: flex;
+        flex-direction: column;
+        .profile-icon,.id{
+            margin: 0 0 8px;
+        }
+        .profile-description{
+            p{
+                font-size: 14px;
+                margin: 0 0 8px;
+            }
+        }
+    }
+}
+.hatena-module-category{
+    .hatena-urllist{
+        a{
+            background: @light-gray;
+            border: 1px solid @light-gray;
+            border-radius: 4px;
+            color: @heading;
+            padding: 0.45em;
+            display: inline-block;
+            &:hover,&:focus{
+                border: 1px solid @light-gray;
+                background: #fff;
+                color: @heading;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.search-form{
+    width: 100%;
+    display: flex;
+}

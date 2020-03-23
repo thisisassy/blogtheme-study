@@ -1,0 +1,42 @@
+.archive-entry{
+    margin: 0 0 40px;
+    border: 1px solid @light-gray;
+    border-radius: 4px;
+    padding: 8px 16px;
+    .archive-entry-header{
+        .date{
+            margin: 0 0 8px;
+            time{
+                font-size: 16px;
+                color: @gray;
+            }
+        }
+        .entry-title{
+            margin: 0 0 16px;
+            a{
+                color: @heading;
+                font-family: 'YuMincho';
+            }
+        }
+    }
+    .categories{
+        margin: 0 0 16px;
+        a{
+            background: #fff;
+            border: 1px solid @light-gray;
+            border-radius: 4px;
+            color: @heading;
+            font-size: 14px;
+            padding: 0.45em;
+            background: @light-gray;
+                border: 1px solid @light-gray;
+                transition: .3s;
+        }
+    }
+    .archive-entry-body{
+        .entry-description{
+            color: @gray;
+            font-size: 14px;
+        }
+    }
+}

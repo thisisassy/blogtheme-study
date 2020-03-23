@@ -5,16 +5,17 @@ a{
     text-decoration: none;
 }
 #blog-title{
+    margin: 0 0 80px;
     #blog-title-content{
         #title{
             margin: 0 0 8px;
             a{
-                font-size: 16px;
-                color: @link;
+                font-size: 18px;
+                color: @heading;
             }
         }
         #blog-description{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
             color: @gray;
         }
@@ -46,25 +47,45 @@ a{
         flex-direction: row;
     }
 }
-
+#top-box{
+    a,span{
+        color: @gray;
+    }
+}
 #main{
     width: auto;
     padding: 8px 16px;
-    background: lightblue;
 
     @media @viewport-960{
+        width: 630px;
         padding: 16px 24px;
         margin: 72px 0;
-        background: lightcoral;
     }
 }
 
 #box2{
     width: auto;
     margin: 0 1rem;
-    background: lightblue;
     @media @viewport-960{
-        padding: 24px 16px;
-        background: lightcoral;
+        width: 630px;
+        padding: 16px 24px;
+        margin: 0 auto;
+    }
+}
+
+#box2-inner{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    @media @viewport-960{
+        flex-flow: row wrap;
+    }
+}
+#footer-inner{
+    max-width: 800px;
+    margin: auto;
+    .footer-address a,.services a{
+        color: @heading;
     }
 }

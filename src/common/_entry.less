@@ -1,7 +1,8 @@
 .entry{
     .entry-header{
+        position: relative;
         .entry-date{
-            margin: 0 0 8px;
+            margin: 0 0 16px;
             a{
                 color: @gray;
             }
@@ -10,15 +11,41 @@
             margin: 0 0 16px;
             a{
                 color: @heading;
+                font-family: 'YuMincho';
+            }
+        }
+        .entry-header-menu{
+            position: absolute;
+            top: 0;
+            right: 0;
+            a{
+                color: @heading;
+                border: 1px solid @light-gray;
+                border-radius: 4px;
+                padding: 0.45em;
+                &:hover,&:focus{
+                    background: @light-gray;
+                    border: 1px solid @light-gray;
+                    transition: .3s;
+                }
             }
         }
 
         .entry-categories{
+            margin: 0 0 16px;
             .entry-category-link{
                 background: @light-gray;
-                color: @heading;
-                padding: 4px 8px;
+                border: 1px solid @light-gray;
                 border-radius: 4px;
+                color: @heading;
+                font-size: 14px;
+                padding: 0.45em;
+                &:hover,&:focus{
+                    background: #fff;
+                    border: 1px solid @light-gray;
+                    color: @heading;
+                    transition: .3s;
+                }
             }
         }
     }
@@ -30,9 +57,83 @@
         p{
             font-size: 18px;
             line-height: 1.8;
+            a{
+                color: @link;
+                &:hover,&:focus{
+                    text-decoration: underline;
+                }
+            }
+            code{
+                background: #272822;
+                color: #f8f8f2;
+                border-radius: 4px;
+                padding: 0.24em;
+            }
+        }
+        li{
+            line-height: 1.6;
         }
         h1,h2,h3,h4,h5,h6{
             margin: 33px 0;
+        }
+        h1{
+            font-size: 32px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 28px;
+        }
+        h4{
+            font-size: 26px;
+        }
+        h5{
+            font-size: 24px;
+        }
+        h6{
+            font-size: 22px;
+        }
+        hr{
+            margin: 16px 0;
+        }
+        table{
+            width: 100%;
+            th,td{
+                padding: 0.45em;
+            }
+        }
+        thead{
+            tr{
+                background: @gray;
+            }
+        }
+        tbody{
+  
+            tr:nth-child(2n+1){
+                background: @light-gray;
+            }
+        }
+        blockquote{
+            background: @light-gray;
+            margin: 0;
+            padding: 16px 24px;
+            border-radius: 4px;
+            p{
+                margin: 0 0 16px;
+                font-style: oblique;
+                        a{
+                            text-align: center;
+                        }
+
+            }
+        }
+        pre{
+            background: #272822;
+            color: #f8f8f2;
+            border-radius: 4px;
+            margin: 0 0 16px;
+            padding: 16px 24px;
         }
     }
 }
