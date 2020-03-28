@@ -115,6 +115,7 @@ a {
 .hatena-module .hatena-module-title {
   font-size: 18px;
   margin: 0 0 16px;
+  font-weight: 600;
 }
 .hatena-module .hatena-module-title a {
   color: #212121;
@@ -144,6 +145,9 @@ a {
   height: 80px;
   border-radius: 4px;
 }
+.hatena-module .hatena-module-body .urllist-item .urllist-date-link {
+  margin: 0 0 8px;
+}
 .hatena-module .hatena-module-body .urllist-item .urllist-date-link time {
   color: #90A4AE;
 }
@@ -160,17 +164,13 @@ a {
   margin: 0 0 8px;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a {
-  background: #ECECEC;
-  border: 1px solid #ECECEC;
-  border-radius: 4px;
   color: #212121;
   padding: 0.45em;
   display: inline-block;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:hover,
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:focus {
-  border: 1px solid #ECECEC;
-  background: #fff;
+  color: #4285F4;
   transition: 0.3s;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories .urllist-category-link {
@@ -189,18 +189,13 @@ a {
   margin: 0 0 8px;
 }
 .hatena-module-category .hatena-urllist a {
-  background: #ECECEC;
-  border: 1px solid #ECECEC;
-  border-radius: 4px;
   color: #212121;
   padding: 0.45em;
   display: inline-block;
 }
 .hatena-module-category .hatena-urllist a:hover,
 .hatena-module-category .hatena-urllist a:focus {
-  border: 1px solid #ECECEC;
-  background: #fff;
-  color: #212121;
+  color: #4285F4;
   transition: 0.3s;
 }
 .search-form {
