@@ -7,8 +7,9 @@ a{
 #blog-title{
     margin: 0 0 80px;
     #blog-title-content{
+        padding: 0 16px;
         #title{
-            margin: 0 0 8px;
+            margin: 0 0 16px;
             a{
                 font-size: 18px;
                 color: @heading;
@@ -18,14 +19,15 @@ a{
             font-size: 16px;
             font-weight: 400;
             color: @gray;
+            margin: 0;
         }
     }
 }
-#container,#footer{
+#container{
     background: #fff;
     margin: 16px auto;
     @media @viewport-960{
-        margin: 72px auto;
+        margin: 40px auto;
     }
 }
 #container-inner{
@@ -82,10 +84,15 @@ a{
         flex-flow: row wrap;
     }
 }
-#footer-inner{
-    max-width: 800px;
-    margin: auto;
-    .footer-address a,.services a{
+#bottom-editarea,#footer{
+    max-width: 960px;
+    margin: 2em auto;
+    font-size: 80%;
+    text-align: center;
+    a,p{
         color: @heading;
+    }
+    .services,.footer-address{
+        margin: 0 8px 0 0;
     }
 }
