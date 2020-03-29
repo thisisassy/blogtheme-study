@@ -14,8 +14,11 @@ a {
 #blog-title {
   margin: 0 0 80px;
 }
+#blog-title #blog-title-content {
+  padding: 0 16px;
+}
 #blog-title #blog-title-content #title {
-  margin: 0 0 8px;
+  margin: 0 0 16px;
 }
 #blog-title #blog-title-content #title a {
   font-size: 18px;
@@ -25,16 +28,15 @@ a {
   font-size: 16px;
   font-weight: 400;
   color: #90A4AE;
+  margin: 0;
 }
-#container,
-#footer {
+#container {
   background: #fff;
   margin: 16px auto;
 }
 @media screen and (min-width: 960px) {
-  #container,
-  #footer {
-    margin: 72px auto;
+  #container {
+    margin: 40px auto;
   }
 }
 #container-inner {
@@ -93,13 +95,24 @@ a {
     flex-flow: row wrap;
   }
 }
-#footer-inner {
-  max-width: 800px;
-  margin: auto;
+#bottom-editarea,
+#footer {
+  max-width: 960px;
+  margin: 2em auto;
+  font-size: 80%;
+  text-align: center;
 }
-#footer-inner .footer-address a,
-#footer-inner .services a {
+#bottom-editarea a,
+#footer a,
+#bottom-editarea p,
+#footer p {
   color: #212121;
+}
+#bottom-editarea .services,
+#footer .services,
+#bottom-editarea .footer-address,
+#footer .footer-address {
+  margin: 0 8px 0 0;
 }
 .hatena-module {
   width: auto;
@@ -141,8 +154,8 @@ a {
   margin: 0 0 16px;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-image-link img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 4px;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-date-link {
@@ -184,6 +197,11 @@ a {
 .hatena-module-profile .hatena-module-body .id {
   margin: 0 0 8px;
 }
+.hatena-module-profile .hatena-module-body .profile-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
 .hatena-module-profile .hatena-module-body .profile-description p {
   font-size: 14px;
   margin: 0 0 8px;
@@ -223,7 +241,7 @@ a {
 }
 .entry .entry-header .entry-title a:hover,
 .entry .entry-header .entry-title a:focus {
-  color: #90A4AE;
+  color: #4285F4;
 }
 .entry .entry-header .entry-header-menu {
   position: absolute;
@@ -241,6 +259,7 @@ a {
   background: #ECECEC;
   border: 1px solid #ECECEC;
   transition: 0.3s;
+  color: #4285F4;
 }
 .entry .entry-header .entry-categories {
   margin: 0 0 16px;
@@ -253,7 +272,7 @@ a {
 }
 .entry .entry-header .entry-categories .entry-category-link:hover,
 .entry .entry-header .entry-categories .entry-category-link:focus {
-  color: #90A4AE;
+  color: #4285F4;
   transition: 0.3s;
 }
 .entry .entry-content .table-of-contents {
@@ -355,11 +374,21 @@ a {
   margin: 0 0 16px;
   padding: 16px 24px;
 }
-.archive-entry {
-  margin: 0 0 40px;
+.entry .entry-content .entry-see-more {
   border: 1px solid #ECECEC;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 0.45em;
+  color: #212121;
+}
+.entry .entry-content .entry-see-more:hover,
+.entry .entry-content .entry-see-more:focus {
+  background: #ECECEC;
+}
+.entry .entry-footer {
+  margin: 24px 0;
+}
+.archive-entry {
+  margin: 0 0 40px;
 }
 .archive-entry .archive-entry-header .date {
   margin: 0 0 8px;
@@ -375,20 +404,23 @@ a {
   color: #212121;
   font-family: 'YuMincho';
 }
+.archive-entry .archive-entry-header .entry-title a:hover,
+.archive-entry .archive-entry-header .entry-title a:focus {
+  color: #4285F4;
+}
 .archive-entry .categories {
   margin: 0 0 16px;
 }
 .archive-entry .categories a {
-  background: #fff;
-  border-radius: 4px;
   color: #212121;
   font-size: 14px;
   padding: 0.45em;
-  background: #ECECEC;
-  border: 1px solid #ECECEC;
-  transition: 0.3s;
+}
+.archive-entry .categories a:hover,
+.archive-entry .categories a:focus {
+  color: #4285F4;
 }
 .archive-entry .archive-entry-body .entry-description {
-  color: #90A4AE;
+  color: #454545;
   font-size: 14px;
 }
