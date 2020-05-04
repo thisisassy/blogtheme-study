@@ -1,21 +1,27 @@
 @charset 'utf-8';
 /*!
  Theme: Minim
- Author: asssy
+ Author: Haruka Ashiuchi
  Description: ミニマルなあなたのためのテーマです
  Responsive: yes
  */
 body {
-  font-family: 'Helvetica Neue', 'Yu Gothic', sans-serif;
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
   text-decoration: none;
+}
+.header-image-enable .blog-title-content #title a {
+  color: #fff;
+}
+.header-image-enable .blog-title-content #blog-description {
+  color: #fff;
 }
 #blog-title {
   margin: 0 0 80px;
 }
 #blog-title #blog-title-content {
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 #blog-title #blog-title-content #title {
   margin: 0 0 16px;
@@ -25,9 +31,9 @@ a {
   color: #212121;
 }
 #blog-title #blog-title-content #blog-description {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  color: #90A4AE;
+  color: #CFD8DC;
   margin: 0;
 }
 #container {
@@ -61,11 +67,10 @@ a {
 }
 #top-box a,
 #top-box span {
-  color: #90A4AE;
+  color: #CFD8DC;
 }
 #main {
   width: auto;
-  padding: 8px 16px;
 }
 @media screen and (min-width: 960px) {
   #main {
@@ -81,14 +86,14 @@ a {
 @media screen and (min-width: 960px) {
   #box2 {
     width: 630px;
-    padding: 16px 24px;
-    margin: 0 auto;
+    padding: 0 0 40px 0;
+    margin: 0 16px 0 0;
   }
 }
 #box2-inner {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 960px) {
   #box2-inner {
@@ -116,13 +121,13 @@ a {
 }
 .hatena-module {
   width: auto;
-  margin: 0 0 40px;
+  margin: 0 16px 40px 0;
+  padding: 16px 0 0;
+  border-top: 1px solid #CFD8DC;
 }
 @media screen and (min-width: 960px) {
   .hatena-module {
     width: 44%;
-    padding: 8px;
-    margin: 0 16px 0 0;
   }
 }
 .hatena-module .hatena-module-title {
@@ -141,7 +146,7 @@ a {
 .hatena-module .hatena-module-body span:hover,
 .hatena-module .hatena-module-body a:focus,
 .hatena-module .hatena-module-body span:focus {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .hatena-module .hatena-module-body .hatena-urllist {
   padding: 0;
@@ -162,7 +167,7 @@ a {
   margin: 0 0 8px;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-date-link time {
-  color: #90A4AE;
+  color: #CFD8DC;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-title-link {
   color: #212121;
@@ -171,7 +176,7 @@ a {
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-title-link:hover,
 .hatena-module .hatena-module-body .urllist-item .urllist-title-link:focus {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories {
   margin: 0 0 8px;
@@ -183,7 +188,7 @@ a {
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:hover,
 .hatena-module .hatena-module-body .urllist-item .urllist-categories a:focus {
-  color: #4285F4;
+  color: #FFCDD2;
   transition: 0.3s;
 }
 .hatena-module .hatena-module-body .urllist-item .urllist-categories .urllist-category-link {
@@ -206,19 +211,36 @@ a {
   font-size: 14px;
   margin: 0 0 8px;
 }
-.hatena-module-category .hatena-urllist a {
+.hatena-module-category .hatena-urllist li {
+  margin: 0 0 8px;
+  line-height: 1;
+}
+.hatena-module-category .hatena-urllist li a {
   color: #212121;
   padding: 0.45em;
   display: inline-block;
 }
-.hatena-module-category .hatena-urllist a:hover,
-.hatena-module-category .hatena-urllist a:focus {
-  color: #4285F4;
+.hatena-module-category .hatena-urllist li a:hover,
+.hatena-module-category .hatena-urllist li a:focus {
+  color: #FFCDD2;
   transition: 0.3s;
 }
 .search-form {
-  width: 100%;
   display: flex;
+  border: 1px solid #CFD8DC;
+  border-radius: 4px;
+}
+.search-form .search-module-input {
+  width: 100%;
+  padding: 0.45em;
+}
+.search-form .search-module-button {
+  border: none;
+  outline: none;
+}
+.search-form .search-module-button:hover,
+.search-form .search-module-button:focus {
+  background: #CFD8DC;
 }
 .entry {
   margin: 0 0 80px;
@@ -227,21 +249,22 @@ a {
   position: relative;
 }
 .entry .entry-header .entry-date {
-  margin: 0 0 16px;
+  margin: 0 0 8px;
 }
 .entry .entry-header .entry-date a {
-  color: #90A4AE;
+  color: #CFD8DC;
 }
 .entry .entry-header .entry-title {
   margin: 0 0 16px;
 }
 .entry .entry-header .entry-title a {
   color: #212121;
+  font-size: 32px;
   font-family: 'YuMincho';
 }
 .entry .entry-header .entry-title a:hover,
 .entry .entry-header .entry-title a:focus {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .entry .entry-header .entry-header-menu {
   position: absolute;
@@ -250,33 +273,36 @@ a {
 }
 .entry .entry-header .entry-header-menu a {
   color: #212121;
-  border: 1px solid #ECECEC;
+  border: 1px solid #F5F5F5;
   border-radius: 4px;
   padding: 0.45em;
 }
 .entry .entry-header .entry-header-menu a:hover,
 .entry .entry-header .entry-header-menu a:focus {
-  background: #ECECEC;
-  border: 1px solid #ECECEC;
+  background: #F5F5F5;
+  border: 1px solid #F5F5F5;
   transition: 0.3s;
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .entry .entry-header .entry-categories {
   margin: 0 0 16px;
 }
 .entry .entry-header .entry-categories .entry-category-link {
-  color: #212121;
+  color: #333;
   font-size: 14px;
   padding: 0.45em;
   display: inline-block;
 }
 .entry .entry-header .entry-categories .entry-category-link:hover,
 .entry .entry-header .entry-categories .entry-category-link:focus {
-  color: #4285F4;
+  color: #FFCDD2;
   transition: 0.3s;
 }
+.entry .entry-content {
+  text-align: justify;
+}
 .entry .entry-content .table-of-contents {
-  background: #F2F3F4;
+  background: #fff;
   border-radius: 4px;
   padding: 8px 16px;
 }
@@ -296,7 +322,7 @@ a {
   line-height: 1.8;
 }
 .entry .entry-content p a {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .entry .entry-content p a:hover,
 .entry .entry-content p a:focus {
@@ -338,7 +364,8 @@ a {
   font-size: 22px;
 }
 .entry .entry-content hr {
-  margin: 16px 0;
+  margin: 16px auto;
+  width: 50%;
 }
 .entry .entry-content table {
   width: 100%;
@@ -348,16 +375,16 @@ a {
   padding: 0.45em;
 }
 .entry .entry-content thead tr {
-  background: #90A4AE;
+  background: #CFD8DC;
 }
 .entry .entry-content tbody tr:nth-child(2n+1) {
-  background: #ECECEC;
+  background: #F5F5F5;
 }
 .entry .entry-content blockquote {
   margin: 0;
   padding: 16px 24px;
-  background: #F2F3F4;
-  border-left: 4px solid #90A4AE;
+  background: #fff;
+  border-left: 4px solid #CFD8DC;
   border-radius: 4px;
 }
 .entry .entry-content blockquote p {
@@ -375,17 +402,39 @@ a {
   padding: 16px 24px;
 }
 .entry .entry-content .entry-see-more {
-  border: 1px solid #ECECEC;
+  border: 1px solid #CFD8DC;
   border-radius: 4px;
   padding: 0.45em;
   color: #212121;
 }
 .entry .entry-content .entry-see-more:hover,
 .entry .entry-content .entry-see-more:focus {
-  background: #ECECEC;
+  background: #CFD8DC;
 }
 .entry .entry-footer {
-  margin: 24px 0;
+  margin: 32px 0;
+}
+.entry .entry-footer .entry-footer-section {
+  color: #CFD8DC;
+  margin: 0 0 16px;
+}
+.entry .entry-footer .entry-footer-section .entry-footer-time a {
+  color: #CFD8DC;
+}
+.entry .entry-footer .comment-box .comment li {
+  list-style: none;
+}
+.entry .entry-footer .comment-box .comment li .comment-user-id {
+  color: #212121;
+}
+.pager {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.pager .pager-next a,
+.pager .pager-prev a {
+  color: #333;
+  padding: 8px 0;
 }
 .archive-entry {
   margin: 0 0 40px;
@@ -395,7 +444,7 @@ a {
 }
 .archive-entry .archive-entry-header .date time {
   font-size: 16px;
-  color: #90A4AE;
+  color: #CFD8DC;
 }
 .archive-entry .archive-entry-header .entry-title {
   margin: 0 0 16px;
@@ -406,7 +455,7 @@ a {
 }
 .archive-entry .archive-entry-header .entry-title a:hover,
 .archive-entry .archive-entry-header .entry-title a:focus {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .archive-entry .categories {
   margin: 0 0 16px;
@@ -418,9 +467,9 @@ a {
 }
 .archive-entry .categories a:hover,
 .archive-entry .categories a:focus {
-  color: #4285F4;
+  color: #FFCDD2;
 }
 .archive-entry .archive-entry-body .entry-description {
-  color: #454545;
+  color: #333;
   font-size: 14px;
 }

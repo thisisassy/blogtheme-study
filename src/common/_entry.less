@@ -3,7 +3,7 @@
     .entry-header{
         position: relative;
         .entry-date{
-            margin: 0 0 16px;
+            margin: 0 0 8px;
             a{
                 color: @gray;
             }
@@ -12,6 +12,7 @@
             margin: 0 0 16px;
             a{
                 color: @heading;
+                font-size: 32px;
                 font-family: 'YuMincho';
 
                 &:hover,&:focus{
@@ -40,7 +41,7 @@
         .entry-categories{
             margin: 0 0 16px;
             .entry-category-link{
-                color: @heading;
+                color: @text;
                 font-size: 14px;
                 padding: 0.45em;
                 display: inline-block;
@@ -53,6 +54,7 @@
     }
 
     .entry-content{
+        text-align: justify;
         .table-of-contents{
             background: @white;
            border-radius: 4px;
@@ -114,7 +116,8 @@
             font-size: 22px;
         }
         hr{
-            margin: 16px 0;
+            margin: 16px auto;
+            width: 50%;
         }
         table{
             width: 100%;
@@ -157,17 +160,48 @@
             padding: 16px 24px;
         }
         .entry-see-more{
-            border: 1px solid @light-gray;
+            border: 1px solid @gray;
             border-radius: 4px;
             padding: 0.45em;
             color: @heading;
 
             &:hover,&:focus{
-                background: @light-gray;
+                background: @gray;
             }
         }
     }
     .entry-footer{
-        margin: 24px 0;
+        margin: 32px 0;
+        .entry-footer-section{
+            color: @gray;
+            margin: 0 0 16px;
+            .entry-footer-time{
+                a{
+                    color: @gray;
+                }
+            }
+        }
+
+        .comment-box{
+            .comment{
+                li{
+                    list-style: none;
+                    .comment-user-id{
+                        color: @heading;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pager{
+    border-top: 1px solid @text;
+    border-bottom: 1px solid @text;
+    .pager-next,.pager-prev{
+        a{
+            color: @text;
+            padding: 8px 0;
+        }
     }
 }

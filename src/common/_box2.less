@@ -1,11 +1,11 @@
 
 .hatena-module{
     width: auto;
-    margin: 0 0 40px;
+    margin: 0 16px 40px 0;
+    padding: 16px 0 0;
+    border-top: 1px solid @gray;
     @media @viewport-960{
         width: 44%;
-        padding: 8px;
-        margin: 0 16px 0 0;
     }
 
     .hatena-module-title{
@@ -93,19 +93,36 @@
 }
 .hatena-module-category{
     .hatena-urllist{
-        a{
-            color: @heading;
-            padding: 0.45em;
-            display: inline-block;
-            &:hover,&:focus{
-                color: @link;
-                transition: .3s;
+        li{
+            margin: 0 0 8px;
+            line-height: 1;
+            a{
+                color: @heading;
+                padding: 0.45em;
+                display: inline-block;
+                &:hover,&:focus{
+                    color: @link;
+                    transition: .3s;
+                }
             }
         }
     }
 }
 
 .search-form{
-    width: 100%;
     display: flex;
+    border: 1px solid @gray;
+    border-radius: 4px;
+
+    .search-module-input{
+        width: 100%;
+        padding: 0.45em;
+    }
+    .search-module-button{
+        border: none;
+        outline: none;
+        &:hover,&:focus{
+            background: @gray;
+        }
+    }
 }
