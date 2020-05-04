@@ -1,13 +1,25 @@
 body{
-    font-family: 'Helvetica Neue','Yu Gothic',sans-serif;
+    font-family: 'Helvetica Neue','Yu Gothic','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a{
     text-decoration: none;
 }
+.header-image-enable{
+    .blog-title-content{
+        #title{
+            a{
+                color: @white;
+            }
+        }
+        #blog-description{
+            color: @white;
+        }
+    }
+}
 #blog-title{
     margin: 0 0 80px;
     #blog-title-content{
-        padding: 0 16px;
+        padding: 32px 16px;
         #title{
             margin: 0 0 16px;
             a{
@@ -16,7 +28,7 @@ a{
             }
         }
         #blog-description{
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             color: @gray;
             margin: 0;
@@ -56,7 +68,6 @@ a{
 }
 #main{
     width: auto;
-    padding: 8px 16px;
 
     @media @viewport-960{
         width: 630px;
@@ -70,15 +81,15 @@ a{
     margin: 0 1rem;
     @media @viewport-960{
         width: 630px;
-        padding: 16px 24px;
-        margin: 0 auto;
+        padding: 0 0 40px 0;
+        margin: 0 16px 0 0;
     }
 }
 
 #box2-inner{
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     @media @viewport-960{
         flex-flow: row wrap;
