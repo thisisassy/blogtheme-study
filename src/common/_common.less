@@ -38,7 +38,7 @@ a{
 #container{
     background: #fff;
     margin: 16px auto;
-    @media @viewport-960{
+    @media @viewport-min-960{
         margin: 40px auto;
     }
 }
@@ -46,7 +46,7 @@ a{
     width: auto;
     margin: auto 1rem;
 
-    @media @viewport-960{
+    @media @viewport-min-960{
         max-width: 630px;
         margin: auto;
     }
@@ -57,7 +57,7 @@ a{
     justify-content: center;
     flex-direction: column;
 
-    @media @viewport-960{
+    @media @viewport-min-960{
         flex-direction: row;
     }
 }
@@ -69,8 +69,8 @@ a{
 #main{
     width: auto;
 
-    @media @viewport-960{
-        width: 630px;
+    @media @viewport-min-960{
+        width: 660px;
         padding: 16px 24px;
         margin: 72px 0;
     }
@@ -79,8 +79,8 @@ a{
 #box2{
     width: auto;
     margin: 0 1rem;
-    @media @viewport-960{
-        width: 630px;
+    @media @viewport-min-960{
+        width: 660px;
         padding: 0 0 40px 0;
         margin: 0 16px 0 0;
     }
@@ -89,9 +89,9 @@ a{
 #box2-inner{
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: space-between;
 
-    @media @viewport-960{
+    @media @viewport-min-960{
         flex-flow: row wrap;
     }
 }
