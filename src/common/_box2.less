@@ -3,9 +3,8 @@
     width: auto;
     margin: 0 16px 40px 0;
     padding: 16px 0 0;
-    border-top: 1px solid @gray;
-    @media @viewport-960{
-        width: 44%;
+    @media @viewport-min-960{
+        width: 45%;
     }
 
     .hatena-module-title{
@@ -111,16 +110,17 @@
 
 .search-form{
     display: flex;
-    border: 1px solid @gray;
-    border-radius: 4px;
+    border-bottom: 1px solid @gray;
 
     .search-module-input{
         width: 100%;
         padding: 0.45em;
+        border: none;
     }
     .search-module-button{
         border: none;
         outline: none;
+        background: @white;
         &:hover,&:focus{
             background: @gray;
         }
